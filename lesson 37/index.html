@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/2048.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<h1>2048</h1>
+		<!--游戏面板-->
+		<div id="gamePanel">
+			<!--分数记录、新游戏按钮-->
+			<p>
+				<a class="button" id="newGame">New Game</a>
+				Score:<span id="score">
+						0
+					</span>
+			</p>
+			<!--网格面板-->
+			<div id="gridPanel">
+				<!--背景格子-->
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+
+				<!--带数字的格子-->
+				<div class="cell num2" id="cell00">2</div>
+				<div class="cell num4" id="cell01">4</div>
+				<div class="cell num8" id="cell02">8</div>
+				<div class="cell num16" id="cell03">16</div>
+				<div class="cell num32" id="cell10">32</div>
+				<div class="cell num64" id="cell11">64</div>
+				<div class="cell num128" id="cell12">128</div>
+				<div class="cell num256" id="cell13">256</div>
+				<div class="cell num512" id="cell20">512</div>
+				<div class="cell num1024" id="cell21">1024</div>
+				<div class="cell num2048" id="cell22">2048</div>
+				<div class="cell num4096" id="cell23">4096</div>
+				<div class="cell num8192" id="cell30">8192</div>
+				<div class="cell num16384" id="cell31">16384</div>
+				<div class="cell num32768" id="cell32">32768</div>
+				<div class="cell num65532" id="cell33">65532</div>
+			</div>
+			
+			<!--游戏结束面板-->
+			<div id="gameOver">
+				<!--黑色背景-->
+				<div></div>
+				<!--白色前景-->
+				<p>
+					Game Over<br />
+					Score:<span id="finalScore">
+						0
+					</span><br />
+					<a class="button" id="restart">Try Again</a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

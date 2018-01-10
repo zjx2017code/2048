@@ -1,0 +1,180 @@
+/*通用样式*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow: hidden;
+}
+div,
+p,
+h1,
+a,
+span {
+	font-weight: bold;
+	font-family: arial;
+}
+
+h1 {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px;
+	background-color: #9F8b77;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+/*棋盘格*/
+
+#gamePanel {
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+#gamePanel>p{
+	padding: 8px;
+}
+#gridPanel {
+	background-color: #BBADA0;
+	width: 480px;
+	height: 480px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/*仅设置上左内边距*/
+	padding: 20px 0 0 20px;
+	position: relative;
+}
+.grid{
+	float: left;
+	margin: 0 20px 20px 0;
+	background-color: #ccc0b3;
+}
+.grid,.cell{
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	
+	
+	
+}
+.cell{
+	position: absolute;
+    text-align: center;
+    line-height: 100px;
+    z-index: 1;
+    color: #776e65;
+    font-size: 32px;
+}
+#cell00,#cell01,#cell02,#cell03{
+	top: 20px;
+}
+#cell10,#cell11,#cell12,#cell13{
+	top: 140px;
+}
+#cell20,#cell21,#cell22,#cell23{
+	top: 260px;
+}
+#cell30,#cell31,#cell32,#cell33{
+	top: 380px;
+}
+#cell00,#cell10,#cell20,#cell30{
+	left: 20px;
+}
+#cell01,#cell11,#cell21,#cell31{
+	left: 140px;
+}
+#cell02,#cell12,#cell22,#cell32{
+	left: 260px;
+}
+#cell03,#cell23,#cell33,#cell13{
+	left: 380px;
+}
+.num2{
+	background-color: #eee4da;
+}
+.num4{
+	background-color: #ede0c8;
+}
+.num8{
+	background-color: #a4fee7;
+}
+.num16{
+	background-color: #a45678;
+}
+.num32{
+	background-color: #23456af;
+}
+.num64{
+	background-color: #214e56;
+}
+.num128{
+	background-color: #a245e7;
+}
+.num256{
+	background-color: #5623ea;
+}
+.num512{
+	background-color: #23acd4;
+}
+.num1024{
+	background-color: #356ade;
+}
+.num2048{
+	background-color: #245336;
+}
+.num4096{
+	background-color: #ade345;
+}
+.num8192{
+	background-color: #478afe;
+}
+.num16384{
+	background-color: #09846a;
+}
+.num32768{
+	background-color: #67adfe;
+}
+.num65532{
+	background-color: #da4576;
+}
+.num16,.num32,.num64,.num128,.num256,.num512,.num1024,.num2048,.num4096,.num8192,.num16384,.num32768,.num65532{
+	color: #FFFFFF;
+}
+/*game over*/
+#gameOver{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+#gameOver>div{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+#gameOver>p{
+	width: 300px;
+	background-color: #fff;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	text-align: center;
+	padding: 20px 0;
+	line-height: 2;
+}
+#gameOver .button{
+	line-height: 1;
+}

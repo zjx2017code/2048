@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!--
+      Element，元素
+      Attribute，属性
+      Text，文本
+    -->
+		<div id="odiv">
+			<img src="" />
+			<p id="pa">sjkfgj</p>
+			<span id="sp" </span>
+		</div>
+		<script type="text/javascript">
+			var p = document.getElementById('pa')
+			var parent = p.parentElement; // 获取父元素、父节点
+			console.log(parent)
+			var el = parent.firstChild; //当前元素的第一个/最后一个子元素节点
+			console.log(el)
+			// 添加、删除子元素
+			ele.appendChild(el);
+			ele.removeChild(el);
+			// 替换子元素
+			ele.replaceChild(el1, el2);
+
+			// 插入子元素
+			parentElement.insertBefore(newElement, referenceElement);
+
+			//克隆元素
+			ele.cloneNode(true) //该参数指示被复制的节点是否包括原节点的所有属性和子节点
+		</script>
+	</body>
+
+</html>
